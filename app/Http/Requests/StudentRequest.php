@@ -26,7 +26,7 @@ class StudentRequest extends FormRequest
             // importante recuerden los names de sus campos
             'name_student'=> 'required|alpha',
             'lastname_student'=> 'required|alpha',
-            'id_student'=> 'required|alpha',
+            'id_student'=> 'required|numeric',
             'birthday'=> 'required|date',
             'comments'=> 'required|string',
         ];

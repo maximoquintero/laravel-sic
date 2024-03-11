@@ -78,7 +78,7 @@ class StudentController extends Controller
 
         $student=Student::find($id);
         $student->update($validated);
-        return redirect(route('students.index'))->with('notificacion','Estudiante editado correctamente');
+        return redirect(route('students.index'))->with('success','Estudiante editado correctamente');
     }
 
     /**
